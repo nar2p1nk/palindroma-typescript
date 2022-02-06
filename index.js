@@ -45,6 +45,7 @@ var readline = require('readline').createInterface({
 });
 readline.question('enter a word: ', function (word) {
     palindroma(word);
+    readline.close()
 });
 var palindroma = function (word) { return __awaiter(_this, void 0, void 0, function () {
     var reversedWord;
